@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_footer"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    app:layout_behavior=".views.QuickHideBehavior">
+
+    <View
+        android:id="@+id/main_space_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/new_main_text_color" />
+
+    <RadioGroup
+        android:id="@+id/rdgroup_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_space_line"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_main_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_mall_selector"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="商城"
+            android:textColor="@color/icon_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_main_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_classify_selector"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="分类"
+            android:textColor="@color/icon_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_main_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_navigation_selector"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text=""
+            android:textColor="@color/icon_text"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rd_main_find"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_find_selector"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="发现"
+            android:textColor="@color/icon_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_main_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/icon_user_selector"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="我"
+            android:textColor="@color/icon_text"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_bottom_midle"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:src="@drawable/icon_main_bottom_midle_selector"
+
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_message_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/message_dot"
+        android:visibility="gone" />
+
+</RelativeLayout>

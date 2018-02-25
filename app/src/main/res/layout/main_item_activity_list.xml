@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/new_white_color"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <com.duowan.mobile.netroid.image.NetworkImageView
+        android:id="@+id/iv_activity_image"
+        android:layout_width="175dp"
+        android:layout_height="89dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/mine_white"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_loadfail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/without_offline_package"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/reload"
+        android:layout_below="@id/iv_loadfail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:text="您还没有下载离线包"
+        android:textSize="14sp" />
+
+</RelativeLayout>

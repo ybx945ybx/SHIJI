@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            fresco:actualImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:background="#7a000000"
+            android:gravity="center"
+            android:text="TOP 1"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:background="#99212121"
+            android:gravity="center"
+            android:text="已推荐"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="¥ 14700"
+        android:textColor="@color/red_dark"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="商品中文描述"
+        android:textColor="#4a4a4a"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Givenchy"
+        android:textColor="#4a4a4a"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+</LinearLayout>

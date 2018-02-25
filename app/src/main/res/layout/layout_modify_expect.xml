@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llt_noBaby"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+       <!--  <RadioGroup
+            android:id="@+id/rdgroup_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rd_expectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/selector_red_grey_rd"
+            	android:textColor="@color/selector_red_rd"
+                android:text="预产\n期" />
+            <RadioButton
+                android:id="@+id/rd_lastMenstruation"
+                android:button="@null"
+                android:padding="5dp"
+                android:background="@drawable/selector_red_grey_rd"
+            	android:textColor="@color/selector_red_rd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="末次\n月经" />
+        </RadioGroup>
+ -->
+ 		<TextView android:layout_width="30dp"
+ 		    android:layout_height="match_parent"
+ 		    android:textColor="@color/white"
+ 		    android:gravity="center"
+ 		    android:text="预\n产\n期"/>
+        <DatePicker android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:id="@+id/datePicker"           
+            android:spinnersShown="true" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btn_submit_noBaby"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/selector_red"
+        android:text="确认"
+        android:onClick="onClick"
+        android:textColor="@color/white" />
+
+</LinearLayout>

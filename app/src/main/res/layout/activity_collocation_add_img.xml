@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:background="@color/mine_white"
+    android:id="@+id/layout_root">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_collocation"
+        android:layout_width="319dp"
+        android:layout_height="484dp"
+        android:background="@color/mine_background"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tag_auto_selector"
+        android:scaleType="centerInside"
+        android:src="@mipmap/add_grey"
+        android:layout_height="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            android:text="取消"
+            android:paddingTop="29dp"
+            android:paddingLeft="29dp"
+            android:paddingRight="29dp"
+            android:paddingBottom="26dp"/>
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_base_red"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:text="下一步"
+            android:paddingTop="29dp"
+            android:paddingLeft="29dp"
+            android:paddingRight="29dp"
+            android:paddingBottom="26dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

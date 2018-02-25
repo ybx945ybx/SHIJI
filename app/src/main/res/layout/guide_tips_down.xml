@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llyt_tips"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guide_tips"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:text="哈哈哈哈哈哈哈哈哈哈~"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:id="@+id/guide_tips"
+        android:elevation="6dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_tips_down"
+        android:id="@+id/guide_arrow"
+        android:elevation="6dp"/>
+</LinearLayout>

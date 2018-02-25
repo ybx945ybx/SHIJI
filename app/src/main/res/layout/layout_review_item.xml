@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/reviewItemHeight"
+        android:id="@+id/rlt_reviewtop"
+        android:background="#34fd36">
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:id="@+id/img_review1"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="@dimen/reviewDescHeight"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="测试\n内容"
+            android:id="@+id/tv_desc1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:background="#69696969"/>
+    </RelativeLayout>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="2dp"
+	    android:orientation="horizontal">
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:id="@+id/rlt_reviewleft"
+        	android:layout_height="@dimen/reviewItemHeight"
+        	android:background="#34fd36">
+        	<ImageView android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:contentDescription="@null"
+            	android:scaleType="fitCenter"
+            	android:id="@+id/img_review2"/>
+        	<TextView android:layout_width="match_parent"
+            	android:layout_height="@dimen/reviewDescHeight"
+            	android:layout_alignParentBottom="true"
+           	 	android:textSize="14sp"
+            	android:textColor="@color/white"
+            	android:text="测试\n内容"
+            	android:id="@+id/tv_desc2"
+            	android:paddingLeft="20dp"
+            	android:paddingRight="20dp"
+            	android:ellipsize="end"
+            	android:gravity="center_vertical"
+            	android:background="#69696969"/>
+    	</RelativeLayout>
+    	<RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="2dp"
+	        android:id="@+id/rlt_reviewright"
+        	android:layout_height="@dimen/reviewItemHeight"
+        	android:background="#34fd36">
+        	<ImageView android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:contentDescription="@null"
+            	android:scaleType="fitCenter"
+            	
+            	android:id="@+id/img_review3"/>
+        	<TextView android:layout_width="match_parent"
+            	android:layout_height="@dimen/reviewDescHeight"
+            	android:layout_alignParentBottom="true"
+           	 	android:textSize="14sp"
+            	android:textColor="@color/white"
+            	android:text="测试\n内容"
+            	android:id="@+id/tv_desc3"
+            	android:paddingLeft="20dp"
+            	android:paddingRight="20dp"
+            	android:ellipsize="end"
+            	android:gravity="center_vertical"
+            	android:background="#69696969"/>
+    	</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

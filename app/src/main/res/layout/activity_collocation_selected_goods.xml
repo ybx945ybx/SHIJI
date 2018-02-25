@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mine_white">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mine_white"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#212121"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            app:tabTextColor="#212121">
+
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/xia_fanhui"
+            android:paddingLeft="19dp"
+            android:paddingRight="8dp"
+            />
+        <View
+            android:id="@+id/left_view"
+            android:layout_width="52dp"
+            android:layout_height="3dp"
+            android:background="@color/mine_white"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="63dp"
+            android:layout_alignParentBottom="true"/>
+        <View
+            android:id="@+id/right_view"
+            android:layout_width="78dp"
+            android:layout_height="3dp"
+            android:background="@color/mine_white"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1a000000"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

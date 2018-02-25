@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    style="@style/goods_list_tagflow_item_style"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:text="柿集"
+    android:textSize="11sp"
+    android:textColor="@color/text_color"
+    android:textStyle="bold"/>
+
+

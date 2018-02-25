@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@drawable/layout_selector">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:id="@+id/llyt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36dp"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:layout_width="31dp"
+                android:layout_height="30dp">
+
+                <cn.yiya.shiji.views.RoundedImageView
+                    android:id="@+id/list_item_fans_image"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    app:riv_oval="true"
+                    android:src="@mipmap/user_icon_default" />
+                <ImageView
+                    android:id="@+id/iv_red_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v_guanzhu_pinglun"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_item_fans_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/list_item_fans_image"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/person_center_black"
+                android:textSize="14sp"
+                android:text="柿宝527"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <cn.yiya.shiji.views.FloatingActionButton
+            android:id="@+id/list_item_fans_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            app:v_styleId="@array/fab_wave" />
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/list_item_fans_status"-->
+            <!--android:src="@drawable/ic_followed"/>-->
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/mine_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</RelativeLayout>

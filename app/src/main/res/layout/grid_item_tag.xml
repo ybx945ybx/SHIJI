@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/goods_list_item_bg">
+
+    <ImageView
+        android:id="@+id/grid_item_tag_image0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_dafault"
+        android:background="@color/mine_background"/>
+    <TextView
+        android:id="@+id/grid_item_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/person_center_black"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+</LinearLayout>

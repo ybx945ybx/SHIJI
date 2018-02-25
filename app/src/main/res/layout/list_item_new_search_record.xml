@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_white_color">
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="这是一个历史记录"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:maxWidth="300dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center_vertical" />
+</RelativeLayout>

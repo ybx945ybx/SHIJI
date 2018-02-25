@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_top_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:paddingBottom="7dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TOP 10 服饰品牌"
+            android:textColor="#212121"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="#1e1e1e" />
+
+        <cn.yiya.shiji.views.PagerContainer
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="30dp">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="208dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal" />
+        </cn.yiya.shiji.views.PagerContainer>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/new_gray_color" />
+</LinearLayout>

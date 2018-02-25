@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_brand_stroke"
+            android:padding="1px">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/brands_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                fresco:actualImageScaleType="centerInside" />
+
+            <RelativeLayout
+                android:id="@+id/rlyt_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#b2212121"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_for_seller"
+                        android:textColor="@color/mine_white"
+                        android:textSize="10sp"
+                        android:text="佣金：￥147"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/tv_for_seller_per"
+                        android:textColor="@color/mine_white"
+                        android:textSize="10sp"
+                        android:text="佣金比例：￥10%"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/mall_goods_recommend_selector"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/brands_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxWidth="130dp"
+            android:text="啊实达的"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/brands_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxWidth="130dp"
+                android:text="￥ 1445"
+                android:textColor="@color/new_red_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brands_item_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/brands_item_price"
+                android:ellipsize="end"
+                android:maxWidth="130dp"
+                android:text="￥ 1445"
+                android:textColor="#bbbbbb"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/brands_item_space"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ll_brand"
+        android:background="#ffffff" />
+
+</RelativeLayout>

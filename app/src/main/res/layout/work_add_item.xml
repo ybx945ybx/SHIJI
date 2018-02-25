@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/goods_list_item_bg">
+    <TextView
+        android:id="@+id/tv_work_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/tianjiagouwubiji"
+        android:text="添加购物笔记"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/person_center_black"
+        android:drawablePadding="17dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

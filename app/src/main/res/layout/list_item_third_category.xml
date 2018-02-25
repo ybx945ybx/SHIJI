@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_third_category"
+     android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/new_white_color"
+    android:paddingLeft="29dp"
+    android:paddingRight="27dp">
+<TextView
+    android:id="@+id/tv_third_category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:text="全部"
+    android:textSize="13sp"
+    android:textColor="@color/new_black_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/arrow_right"/>
+</RelativeLayout>

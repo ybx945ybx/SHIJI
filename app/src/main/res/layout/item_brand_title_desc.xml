@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    //品牌关注
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_black_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Adidas"
+            android:textColor="#dddddd"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_alignLeft="@id/tv_brand"
+            android:layout_alignRight="@id/tv_brand"
+            android:layout_below="@id/tv_brand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#dddddd" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_brand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_bg_stroke"
+            android:text="关注"
+            android:textColor="#dddddd"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    //品牌介绍
+
+    <LinearLayout
+        android:id="@+id/rl_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_desc_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/ll_desc_content"
+            android:layout_toRightOf="@+id/ll_desc_content"
+            android:background="@color/new_white_color"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="品牌介绍"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/triangle_arrow"
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/triangle_down" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_desc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_white_color"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_brand_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="6sp"
+                android:text="Adidas是德国运动用品制造商Adidas AG的成员公司之一。在运动用品的世界中，Adidas一只代表着一种特别的地位象征，而这种象征有人称之为“胜利的三条线”。Adidas目前分为三个系列，分别为：运动表现系列（三条纹Logo）、经典三叶草系列（三叶草Logo）、运动时尚系列（球状内含三条纹Logo）。"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/new_gray_color" />
+    </LinearLayout>
+
+</LinearLayout>

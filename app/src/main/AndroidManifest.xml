@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.yiya.shiji">
+
+    <!--<permission android:name="${applicationId}.permission.MAPS_RECEIVE"-->
+    <!--android:protectionLevel="signature" />-->
+    <!--<uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />-->
+
+    <!--<provider android:name=".your.provider"-->
+    <!--android:authorities="${applicationId}.your.provider"/>-->
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 个推权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService.cn.yiya.shiji" />
+
+    <permission
+        android:name="getui.permission.GetuiService.cn.yiya.shiji"
+        android:protectionLevel="normal" />
+
+    <!-- 照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 任务管理 调试 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".config.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base"
+        tools:replace="android:icon,android:theme,android:name,android:label">
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BackgroundTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.StoreListActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.CouponDetailActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".test.TestActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!-- TuSDK -->
+        <activity
+            android:name="org.lasque.tusdk.impl.activity.TuFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SearchTagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewMainActivity"
+            android:label="柿集"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <activity
+            android:name=".activity.EditUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditUserDescActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectForwardedGoodsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ForwardedGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerRecommendedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchForwardedGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AdWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RedPeopleTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyRedLevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommunityMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShoppingCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewShoppingCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeiboAuthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="wechat"
+                    android:path="/html/item/index.html"
+                    android:scheme="shijiapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CommonTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenMyShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenShopPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectShopTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExchangeScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RedPeopleApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewGoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.XiaoShiJiWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithdrawCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashedRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PendingIncomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IncomeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeIssueActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="wechat"
+                    android:path="/html/home/issue.html"
+                    android:scheme="shijiapp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelCountryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrandsTheme" />
+        <activity
+            android:name=".activity.ImageViewZoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrandsTheme" />
+        <activity
+            android:name=".activity.TravelCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrandsTheme" />
+        <activity
+            android:name=".activity.UserFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BannerWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserTagActivity"
+            android:screenOrientation="portrait" />
+        <!--新改版的笔记详情-->
+        <activity
+            android:name=".activity.NewWorkDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="html"
+                    android:path="/note/index.html"
+                    android:scheme="shijiapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NewLikersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.NewCommentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White"
+            android:windowSoftInputMode="adjustResize" />
+        <!--搜索页面-->
+        <activity
+            android:name=".activity.NewSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category"
+            android:windowSoftInputMode="adjustResize" />
+        <!--品类品牌分类-->
+        <activity
+            android:name=".activity.NewCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <!--搭配详情-->
+        <activity
+            android:name=".activity.NewMatchDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="collocation"
+                    android:path="/html/index.html"
+                    android:scheme="shijiapp" />
+            </intent-filter>
+        </activity>
+        <!--已赞-->
+        <activity
+            android:name=".activity.NewUserLikedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.HotLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HotMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DiscoverFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PublishWorkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.UserTagWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelMallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrandsTheme" />
+        <activity
+            android:name=".activity.TravelStoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrandsTheme" />
+        <activity
+            android:name=".activity.SubmitOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AdressSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MallListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <activity
+            android:name=".activity.CollocationAddGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollocationAddImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Collocation" />
+        <activity
+            android:name=".activity.CollocationSelectedGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollocationSelectedGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollocationGoodsOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollocationPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommunityHomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Community" />
+        <activity
+            android:name=".activity.EditSubscibeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcceptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelBasicInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MallHomeSkipWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PopularBrandsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <activity
+            android:name=".activity.ExcangeCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CouponTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".activity.DesDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewSingleBrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <activity
+            android:name=".activity.NewMallGoodsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Category" />
+        <activity
+            android:name=".activity.NewGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShowOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.AppRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AskWayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.HtmlActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopSortActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ADActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OrderDetailTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="wechat"
+                    android:path="/html/list/orderExpress.html"
+                    android:scheme="shijiapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DownloadFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.InviteShopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.ShopOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.ShopOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.ShareQRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.RecommendBuyWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MapWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCouponActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity.NewLocalWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebViewTheme"></activity>
+
+        <activity
+            android:name=".activity.CMBWebViewActivity"
+            android:theme="@style/WebViewTheme" />
+
+        <!--店主推荐-->
+        <activity
+            android:name=".activity.ShopRecommendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <!-- =========================================================================== -->
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="557ebdfa67e58e6c1f001bf3" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 个推 SDK 配置 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="Q4FwAJ6sEpAPdcNVmqbTb2" />
+        <!-- APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="Plm330oE6n67RY7R0V2Nx7" />
+        <!-- APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="qyi0O0KraJ9figx8hsfUs9" />
+        <!-- APPSECRET -->
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <!-- 配置透传消息的Receiver  appid需要替换 -->
+        <receiver
+            android:name=".receiver.PushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.Q4FwAJ6sEpAPdcNVmqbTb2" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" />
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" />
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- activity -->
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- download -->
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.cn.yiya.shiji"
+            android:exported="true"
+            android:process=":pushservice" />
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <!-- com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- appId需要替换 -->
+                <!-- android:name="com.igexin.sdk.action.appId" -->
+                <action android:name="com.igexin.sdk.action.Q4FwAJ6sEpAPdcNVmqbTb2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+        <service android:name=".download.DownLoadService" />
+        <service
+            android:name=".receiver.PushService"
+            android:exported="false"
+            android:priority="1000">
+            <!--android:process=":message">-->
+            <intent-filter>
+                <action android:name="cn.yiya.shiji.receiver.PushService" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <!-- 下载包 -->
+        <receiver android:name=".receiver.AppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- shareSDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.AddressManageActivity"
+            android:label="@string/title_activity_address_manage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWalletActivity"
+            android:label="@string/title_activity_my_wallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditAddressActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_edit_address"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.RedPackageActivity"
+            android:label="@string/title_activity_red_package"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- alipay sdk end -->
+        <activity
+            android:name=".activity.ChoosePublishedGoodsActivity"
+            android:label="@string/title_activity_choose_published_goods"
+            android:screenOrientation="portrait"
+            android:theme="@style/White" />
+        <activity
+            android:name=".activity.ChooseGoodsActivity"
+            android:label="@string/title_activity_choose_goods"
+            android:screenOrientation="portrait"
+            android:theme="@style/OrderDetailTheme" />
+        <activity
+            android:name=".activity.RegistedGuideActivity"
+            android:label="@string/title_activity_registed_guide_one"
+            android:screenOrientation="portrait"
+            android:theme="@style/RegistedGuideTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.ExchangeCouponRecordActivity"
+            android:label="@string/title_activity_echange_coupon_record"
+            android:screenOrientation="portrait"
+            android:theme="@style/CouponTheme"></activity>
+
+        <activity
+            android:name=".activity.GoodsListFilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qnTuZ4EypVRpaYxqjaRDNPjSfBzER6Dh" />
+
+        <service
+            android:name=".receiver.DownloadAppService"
+            android:exported="true" />
+
+        <!-- 招商银行  -->
+        <service
+            android:name="cmb.pb.cmbsafe.CmbService"
+            android:exported="false"></service>
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom"></activity>
+
+    </application>
+
+</manifest>

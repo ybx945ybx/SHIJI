@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@color/order_filter_btn_selected"/>
+    <item android:state_pressed="true" android:drawable="@color/order_filter_btn_selected"/>
+    <item android:state_selected="true" android:drawable="@color/order_filter_btn_selected"/>
+    <item android:drawable="@drawable/goods_list_order_filter_normal"/>
+</selector>

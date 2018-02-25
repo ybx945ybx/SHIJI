@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_root">
+    <include layout="@layout/mine_title_layout_white_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mine_white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tblyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="0dp"
+            app:tabContentStart="2dp">
+
+        </android.support.design.widget.TabLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:background="#dedede"
+            android:layout_marginLeft="82dp"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:background="#dedede"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="82dp"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:background="#dedede"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="165dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

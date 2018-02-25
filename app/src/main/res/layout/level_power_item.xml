@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="19dp"
+              android:paddingRight="19dp"
+              android:layout_marginTop="4dp"
+              android:gravity="center_vertical">
+        <View
+            android:id="@+id/view_cirle"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:background="@drawable/level_red_cirle"/>
+        <TextView
+            android:id="@+id/tv_power_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_base_red"
+            android:textSize="14sp"
+            android:text="要求：≥10000成长值"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_power_detail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:text="每个动作都有成长值记录，提升在柿集的等级"-->
+        <!--android:layout_marginTop="7dp"/>-->
+
+</LinearLayout>

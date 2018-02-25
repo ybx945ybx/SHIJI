@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/new_white_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/new_gray_color" />
+
+    <ImageView
+        android:id="@+id/toolbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:src="@mipmap/back"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/toolbar_middle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="导航"
+        android:textColor="@color/new_black_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_right_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/toolbar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_shopping_cart" />
+
+        <TextView
+            android:id="@+id/toolbar_right_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/car_count_style_black"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/new_white_color"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

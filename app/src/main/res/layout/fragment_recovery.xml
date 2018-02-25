@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/topBar" >
+
+       <!--  <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/umeng_socialize_action_back_selected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/umeng_socialize_title_right_bt_selected" /> -->
+
+        <TextView
+            style="@style/topTitle"
+            android:text="发现"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <android.support.v4.view.ViewPager 
+                android:id="@+id/adsViewPager"
+                android:background="#AAA"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                 /> -->
+                 <!-- android:minHeight="150dp" -->
+            <cn.yiya.shiji.widgets.BannerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bannerView"/>
+			<Button style="@style/longButtonRed"
+			    android:text="工具"
+			    android:layout_marginTop="5dp"
+			    android:id="@+id/tools"/>
+			
+			<Button style="@style/longButtonRed"
+			    android:text="回顾"
+			    
+			    android:layout_marginTop="5dp"
+			    android:id="@+id/btn_review"/>
+			<!-- android:visibility="gone" -->
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

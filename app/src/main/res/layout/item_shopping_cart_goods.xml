@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.yiya.shiji.views.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_wish"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#d0d4e1"
+            android:gravity="center"
+            android:text="移\n入\n收\n藏\n夹"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_wish"
+            android:background="#ed5137"
+            android:gravity="center"
+            android:text="删\n除"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_white_color"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/new_gray_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_check_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="14dp"
+                android:paddingTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/cb_goods"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@null"
+                    android:button="@drawable/check_box_cart_style"
+                    android:checked="true"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_goods_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_goods_edit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/bianjidizhi" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_goods_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_goods_image"
+                android:layout_width="98dp"
+                android:layout_height="135dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:duplicateParentState="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_goods_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/user_dafault" />
+
+                <ImageView
+                    android:id="@+id/iv_sold_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/soldout" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(单品已降价"
+                    android:textColor="@color/discount"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/discount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/discount_price"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元)"
+                    android:textColor="@color/discount"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="68dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rl_goods_image"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="女皇"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_params"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_goods_name"
+                android:layout_below="@id/tv_goods_name"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/llyt_price"
+                android:layout_marginRight="6dp"
+                android:paddingBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/llyt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="16dp"
+                android:gravity="right"
+                android:paddingBottom="5dp">
+                <LinearLayout
+                    android:id="@+id/ll_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥ "
+                        android:textColor="#212121"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#212121"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_subtotal_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小计 ¥ "
+                        android:textColor="#bbbbbb"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_subtotal_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#bbbbbb"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</cn.yiya.shiji.views.SwipeItemLayout>

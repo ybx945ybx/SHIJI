@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mine_white"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="这是一个历史记录"
+        android:textColor="@color/flow_text_color"
+        android:padding="16dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:maxWidth="300dp"
+        android:gravity="center_vertical"
+        android:onClick="onClick"/>
+    <ImageView
+        android:id="@+id/iv_record"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/mine_right_arrow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+</RelativeLayout>

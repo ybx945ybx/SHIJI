@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mine_white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/home_detail_title"/>
+        <ImageView
+            android:id="@+id/iv_go_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@mipmap/jiantou"/>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_site"
+        android:layout_width="247dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="9dp"
+        android:padding="2dp"
+        android:src="@mipmap/work_default"
+        android:layout_gravity="center"
+        fresco:actualImageScaleType="centerInside"
+        android:background="@drawable/goods_detail_site_bg"/>
+    <TextView
+        android:id="@+id/tv_site_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="21dp"
+        android:textSize="12sp"
+        android:textColor="#373737"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/mine_background"
+        android:layout_marginTop="43dp"/>
+
+</LinearLayout>

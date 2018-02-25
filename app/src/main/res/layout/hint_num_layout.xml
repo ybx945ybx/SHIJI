@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/tv"
+            android:text="待支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingRight="5dp"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/fouteen_sp"/>
+        <TextView
+            android:id="@+id/counttext"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_white"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/background_red"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:layout_alignRight="@id/tv"/>
+    </RelativeLayout>
+</LinearLayout>

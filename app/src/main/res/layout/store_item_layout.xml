@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_store"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mine_white">
+
+    <RelativeLayout
+        android:id="@+id/rv_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/layout_selector">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/thirty_one_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/five_dp"
+                android:layout_height="@dimen/twenty_five_dp"
+                android:background="@color/exchang_coupon_title" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="biaotioho90gdh8hd08gh0d8hg0dhgyeyeryurytryt"
+                android:textColor="@color/exchang_coupon_title"
+                android:textSize="@dimen/fifteen_sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:layout_marginBottom="@dimen/ten_dp">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="@dimen/eighty_dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/sixteen_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:src="@mipmap/travel_default" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_cover"
+                android:layout_alignTop="@id/iv_cover"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:layout_marginRight="@dimen/thirty_one_dp"
+                android:layout_toRightOf="@id/iv_cover"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rb_rating"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:text="ss666s / poghipdihb"
+                    android:singleLine="true"
+                    android:textColor="@color/guid_light_text"
+                    android:textSize="@dimen/thirteen_sp" />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:singleLine="true"
+                    android:text="ssasadfafsaafasfafagatgtrhbdfhnghdsfs6fas66fasasfs"
+                    android:textColor="@color/guid_light_text"
+                    android:textSize="@dimen/ten_sp" />
+
+                <TextView
+                    android:id="@+id/tv_coord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:text="ss666s"
+                    android:textColor="@color/guid_light_text"
+                    android:textSize="@dimen/ten_sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sixteen_dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

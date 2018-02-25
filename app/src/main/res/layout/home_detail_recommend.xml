@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/mine_white">
+    <include layout="@layout/home_detail_title"/>
+    <LinearLayout
+        android:id="@+id/home_detail_horizon_rycv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llyt_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_one"/>-->
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_three"/>-->
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_five"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llyt_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_two"/>-->
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_four"/>-->
+            <!--<include layout="@layout/goods_list_item"-->
+                <!--android:id="@+id/layout_recome_six"/>-->
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/mine_background" />
+</LinearLayout>

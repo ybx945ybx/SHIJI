@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/person_center_dividing"/>
+    <LinearLayout
+        android:id="@+id/llyt_order_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="排序"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/filter_background"
+            android:background="@drawable/goods_list_order_filter_item_selector"/>
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="筛选"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/filter_background"
+            android:background="@drawable/goods_list_order_filter_item_selector"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@color/mine_white"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="暂无相关搜索结果"
+            android:textColor="@color/reminder_color"
+            android:drawableLeft="@mipmap/noting"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_mall_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_default_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/zanwusousuojieguo"
+        android:drawablePadding="8dp"
+        android:text="暂无结果"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/person_center_gray"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:paddingBottom="71dp"
+        android:visibility="gone">
+    </TextView>
+</RelativeLayout>

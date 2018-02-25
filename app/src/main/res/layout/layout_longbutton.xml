@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llt_status"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height"
+
+    android:background="@color/mine_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <!--android:background="@drawable/selector_red_grey_btn"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="我的状态"
+        android:id="@+id/label"
+        android:singleLine="true"
+        android:minWidth="100dp"
+        android:textColor="@color/mine_text_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/mine_right_arrow"
+        android:gravity="right|center_vertical"
+        android:text="怀孕中"
+        android:id="@+id/content"
+        android:textColor="@color/mine_text_color" />
+
+</LinearLayout>

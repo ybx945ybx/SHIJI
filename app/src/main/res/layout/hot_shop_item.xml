@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="11dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/hot_shop_item_background">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:scaleType="center"
+        android:src="@mipmap/travel_default"
+        android:id="@+id/iv_shop_cover"/>
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:text="niniiininininininninininininninininininnini"
+        android:textColor="@color/dark_text"
+        android:textSize="11sp"/>
+
+</LinearLayout>

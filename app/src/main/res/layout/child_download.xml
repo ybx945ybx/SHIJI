@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/download_selector"
+                android:paddingBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/city_cn_name"
+        android:layout_width="wrap_content"
+        android:textColor="#3c3c3c"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:text="纽约"/>
+
+    <TextView
+        android:id="@+id/city_en_name"
+        android:layout_width="wrap_content"
+        android:textColor="#797979"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/city_cn_name"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        android:text="(New York)"/>
+
+    <ImageView
+        android:id="@+id/wait_download"
+        android:src="@mipmap/wait_download"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:visibility="visible"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/download_status"
+        android:text="30.9M"
+        android:textColor="#3c3c3c"
+        android:textSize="11sp"
+        android:layout_toLeftOf="@id/wait_download"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <cn.yiya.shiji.views.HorizontalProgressBarWithNumber
+        android:id="@+id/download_progress"
+        android:layout_below="@id/city_cn_name"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        app:progress_reached_color="#3c3c3c"
+        app:progress_unreached_color="#cccccc"
+        app:progress_text_color="#000000"
+        app:progress_text_size="8sp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

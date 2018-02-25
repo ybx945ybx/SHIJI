@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.yiya.shiji.fragment.PageFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hot_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:scrollbars="none"
+        android:headerDividersEnabled="false">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlyt_another"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/anther"
+            android:id="@+id/iv_another"
+            android:paddingBottom="11dp"
+            android:paddingTop="6dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_another"
+            android:background="@color/mine_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingTop="6dp"
+            android:layout_toRightOf="@+id/iv_another"
+            android:layout_marginLeft="3dp"
+            android:text="换一批"
+            android:textColor="#999999"
+            android:textSize="11sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llyt_progressbar"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/progressbar_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar_shape" />
+
+        <TextView
+            android:id="@+id/tv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="对话框"
+            android:textColor="#ffffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</RelativeLayout>

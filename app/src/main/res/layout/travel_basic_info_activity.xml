@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/basic_title_layout"
+        layout="@layout/mine_title_layout_white_bg"/>
+
+    <LinearLayout
+        android:id="@+id/basic_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/basic_title_layout"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d4d4d4"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mine_white"
+            android:visibility="invisible"
+            app:clipToPadding="true"
+            app:tabIndicatorColor="@color/app_base_red"
+            app:tabPaddingBottom="2dp"
+            app:tabSelectedTextColor="@color/app_base_red"
+            app:tabTextColor="@color/dark_text">
+
+        </android.support.design.widget.TabLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_without_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/basic_title_layout"
+        android:background="@color/mine_white"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_loadfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/load_fail"/>
+
+        <TextView
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_loadfail"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:text="加载失败，请点击重试"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

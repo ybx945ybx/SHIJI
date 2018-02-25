@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/mine_white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_height="@dimen/circle_heigh"
+            android:layout_width="@dimen/circle_heigh"
+            android:background="@drawable/shape_circle_grey"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+           >
+        <cn.yiya.shiji.widgets.SquareImageView
+        android:id="@+id/image_item"
+        android:layout_width="@dimen/squareimageview_heigh"
+        android:layout_height="@dimen/squareimageview_heigh"
+        android:scaleType="fitXY"
+        android:src="@mipmap/head_default"/>
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/textright"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/category_text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl"
+        android:paddingTop="10dp"
+        android:text="类名"/>
+    </RelativeLayout>
+</LinearLayout>

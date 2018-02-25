@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--女士 男士 母婴 美妆-->
+                <RelativeLayout
+                    android:id="@+id/rl_classify_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    android:background="@color/new_white_color">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_classify_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="157dp"
+                        android:fastScrollEnabled="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="@color/new_gray_color" />
+
+                    <View
+                        android:id="@+id/viewline"
+                        android:layout_width="1dp"
+                        android:layout_height="62dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="82dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/new_gray_color" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="62dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="82dp"
+                        android:background="@color/new_gray_color" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/new_gray_color" />
+
+                <!--热门品牌-->
+                <LinearLayout
+                    android:id="@+id/ll_hot_brands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/new_white_color"
+                    android:orientation="vertical"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="17dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="热门品牌"
+                            android:textColor="@color/new_black_color"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_all_hot_brands"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/gerenzhongxinjiantou" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_hot_brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/new_gray_color" />
+
+                <!--热门商城-->
+                <LinearLayout
+                    android:id="@+id/ll_hot_malls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/new_white_color"
+                    android:orientation="vertical"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="17dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="热门商城"
+                            android:textColor="@color/new_black_color"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_all_hot_malls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/gerenzhongxinjiantou" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_hot_malls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--无网络-->
+    <include layout="@layout/default_null_layout" />
+</RelativeLayout>

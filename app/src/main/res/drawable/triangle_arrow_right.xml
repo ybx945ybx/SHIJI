@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- 最底层的图片，以x，y轴坐标为中心进行旋转-->
+        <rotate
+            android:fromDegrees="-90"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="0">
+            <bitmap android:src="@mipmap/triangle_down" />
+        </rotate>
+    </item>
+</layer-list>

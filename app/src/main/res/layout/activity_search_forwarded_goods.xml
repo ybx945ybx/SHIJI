@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/layout_root">
+    <RelativeLayout
+        android:id="@+id/rlyt_search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mine_white"
+        android:paddingLeft="16dp">
+        <EditText
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:background="#f0f0f0"
+            android:layout_marginRight="52dp"
+            android:completionThreshold="1"
+            android:drawableLeft="@mipmap/search_tag_icon"
+            android:drawablePadding="6dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="输入商品详情或编号"
+            android:imeOptions="actionDone"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:popupBackground="@color/mine_white"
+            android:singleLine="true"
+            android:textColorHint="#9b9b9b"
+            android:textSize="13sp">
+
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp"
+            android:text="取消"
+            android:textColor="#212121"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycv_forwarded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

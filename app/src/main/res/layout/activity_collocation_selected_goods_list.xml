@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    android:orientation="vertical"
+    android:background="@color/mine_background">
+    <include layout="@layout/mine_title_layout_white_bg"
+        android:id="@+id/title_layout"/>
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/mine_background"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlyt_collocation_selected_goods_list"
+        android:layout_below="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginRight="3.5dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rycv_collocation_selected_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:paddingBottom="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/default_null_layout"/>
+</RelativeLayout>

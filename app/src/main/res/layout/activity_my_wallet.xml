@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_background"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/mine_title_layout_white_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background" />
+    <RelativeLayout
+        android:id="@+id/rlyt_red_packet"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="红包"
+            android:gravity="center"
+            android:textColor="@color/person_center_black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/tv_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_hongbao"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textColor="@color/app_base_red"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_go_packet"
+            android:text="个"
+            android:textColor="@color/person_center_gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/iv_go_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qianwang" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="1px"
+        android:background="@color/person_center_dividing"/>
+    <RelativeLayout
+        android:id="@+id/rlyt_score"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="积分"
+            android:gravity="center"
+            android:textColor="@color/person_center_black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_fen"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textColor="@color/app_base_red"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_go_score"
+            android:text="分"
+            android:textColor="@color/person_center_gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/iv_go_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qianwang" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/mine_background"/>
+    <RelativeLayout
+        android:id="@+id/rlyt_exchange_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="兑换优惠码"
+            android:gravity="center"
+            android:textColor="@color/person_center_black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qianwang" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="1px"
+        android:background="@color/person_center_dividing"/>
+    <RelativeLayout
+        android:id="@+id/rlyt_exchange_score"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="兑换积分"
+            android:gravity="center"
+            android:textColor="@color/person_center_black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qianwang" />
+    </RelativeLayout>
+</LinearLayout>
+

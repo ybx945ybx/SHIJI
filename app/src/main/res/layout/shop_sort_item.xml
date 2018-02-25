@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/shop_sort_item_bg">
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#484848"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+        <ImageView
+            android:id="@+id/shop_cover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="center"
+            android:src="@mipmap/travel_default"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/shop_cover"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="16dp">
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="0.5" />
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rb_rating"
+                android:layout_marginTop="14dp"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/dark_text"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/shop_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/light_text"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_thematic_image"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            fresco:actualImageScaleType="fitXY" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_theme_icon"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_thematic_image"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/triangle_shape" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/new_gray_color" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/layout_root"
+              android:orientation="vertical"
+    android:background="@color/mine_background">
+    <include layout="@layout/mine_title_layout_white_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+    <cn.yiya.shiji.views.SwipeRecyclerView
+        android:id="@+id/rycv_seller_secommended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mine_white">
+
+    </cn.yiya.shiji.views.SwipeRecyclerView>
+
+</LinearLayout>

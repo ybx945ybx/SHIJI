@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_background">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/pulldown">
+        <ListView
+            android:id="@+id/listView"
+            style="@style/Common_ListView"
+            android:headerDividersEnabled="false"
+            android:layout_width="match_parent"
+            android:divider="@color/mine_background"
+            android:dividerHeight="15dp"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include
+        layout="@layout/withoutnet_layout"/>
+</LinearLayout>

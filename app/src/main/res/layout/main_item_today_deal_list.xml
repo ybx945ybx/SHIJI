@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:paddingBottom="14dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:paddingTop="14dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="111dp"
+            android:layout_height="149dp"
+            android:layout_alignParentLeft="true"
+            fresco:actualImageScaleType="centerInside" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_goods_image"
+            android:layout_alignTop="@id/iv_goods_image"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/iv_goods_image">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/red_dark"
+                android:paddingBottom="8dp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                android:paddingTop="8dp"
+                android:text="今 日 特 卖"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="18dp"
+                android:text="Givenchy"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_brand"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Stylished Bomber Jacket"
+                android:textColor="#212121"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_goods"
+                android:layout_marginTop="14dp"
+                android:background="#1e1e1e" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goods"
+                android:layout_marginTop="25dp"
+                android:text="¥ 14700"
+                android:textColor="#0c0c0c"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_price"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/tv_price">
+
+                <TextView
+                    android:id="@+id/tv_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="¥ 23942"
+                    android:textColor="#9b9b9b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@id/tv_old_price"
+                    android:layout_alignRight="@id/tv_old_price"
+                    android:layout_centerVertical="true"
+                    android:background="#9b9b9b" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/item_bg"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/main_background"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+    <!--<cn.yiya.shiji.widgets.gallery.LeftGallery-->
+    <!--android:id="@+id/remember_tags"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone"-->
+    <!--app:spacing="12dp"-->
+    <!--android:layout_margin="12dp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_single"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="热门单品"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="@color/main_text_color"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_latest"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="最新上架"
+                android:textSize="14sp"
+                android:textColor="@color/main_text_color"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_centerInParent="true"
+            android:background="@color/bmi_red"
+            android:layout_height="18dp"/>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="172dp"
+            android:background="@color/text_red"
+            android:scaleType="matrix"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+    <cn.yiya.shiji.widgets.gallery.LeftGallery
+        android:id="@+id/brands_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        app:spacing="10dp">
+
+    </cn.yiya.shiji.widgets.gallery.LeftGallery>
+</LinearLayout>

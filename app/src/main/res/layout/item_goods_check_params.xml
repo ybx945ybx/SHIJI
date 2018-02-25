@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/new_white_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_params"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尺寸"
+        android:textColor="#212121"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_check_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_check_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看尺码表 >"
+            android:textColor="#212121"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/tv_check_size"
+            android:layout_alignRight="@+id/tv_check_size"
+            android:layout_below="@+id/tv_check_size"
+            android:layout_marginTop="2dp"
+            android:background="#9b9b9b" />
+    </RelativeLayout>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_params"
+        android:layout_marginTop="12dp"
+        zhy:max_select="-1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_size"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tfl_params"
+        android:background="@drawable/goods_buy_cover_selector"
+        android:padding="1dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

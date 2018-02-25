@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lly_tips"
+    android:layout_below="@+id/guid_title"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="14dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide_selected_number_top"
+        android:text="已经添加1个品牌"
+        android:textColor="@color/guid_text"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/guide_tips"
+        android:text="我们会根据您的选择定制个性化推送"
+        android:textSize="11sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

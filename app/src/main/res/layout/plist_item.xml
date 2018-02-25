@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:minHeight="100dp"
+    android:id="@+id/rlt_reviewtop"
+    android:padding="5dp">
+    
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:id="@+id/imgview"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="@dimen/reviewDescHeight"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="测试\n内容"
+            android:id="@+id/tv_desc1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:background="#69696969"/>
+</RelativeLayout>

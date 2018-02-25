@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    //商品 搭配 晒单
+
+    <RelativeLayout
+        android:id="@+id/rl_scroll_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_list"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed" />
+
+        <View
+            android:id="@+id/viewline_list"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tablayout_list"
+            android:background="@color/new_gray_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_order_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewline_list"
+            android:paddingBottom="6dp"
+            android:paddingTop="7dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/goods_list_order_filter_item_selector"
+                android:gravity="center"
+                android:text="排序"
+                android:textColor="@color/filter_background"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/goods_list_order_filter_item_selector"
+                android:gravity="center"
+                android:text="筛选"
+                android:textColor="@color/filter_background"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

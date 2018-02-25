@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/toast_layout_root"
+    android:background="@drawable/success_open_shop_toast_bg"
+    android:orientation="vertical"
+    android:padding="32dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/toast_context"
+        android:textSize="16sp"
+        android:text="恭喜您开店成功！"
+        android:textColor="#f9f9f9"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/shop_type_selected"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

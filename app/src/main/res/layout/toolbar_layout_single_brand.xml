@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/new_black_color"
+    android:paddingRight="10dp"
+    android:id="@+id/layout_root">
+
+    <!--  toolbar左边图标按钮，如搜索或者返回按钮-->
+
+    <ImageView
+        android:id="@+id/toolbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:src="@mipmap/back_image_white" />
+
+    <!-- toolbar中间布局，分类搜索使用-->
+    <RelativeLayout
+        android:id="@+id/toolbar_middle_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="54dp"
+        android:layout_toRightOf="@+id/toolbar_left"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/toolbar_middle_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/search_tag_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/toolbar_middle_search_img"
+            android:hint="搜索商品和品牌"
+            android:textColorHint="#9b9b9b"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <!-- toolbar右边的按钮，比如购物车，或者文字按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/toolbar_right_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/toolbar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_main_shoppingcart" />
+
+        <TextView
+            android:id="@+id/toolbar_right_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/car_count_style"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="#212121"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

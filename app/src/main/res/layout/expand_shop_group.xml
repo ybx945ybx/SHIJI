@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/layout_selector"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/shop_back"
+        android:layout_width="match_parent"
+        android:background="@color/main_background"
+        android:layout_height="10dp"/>
+
+    <CheckBox
+        android:button="@null"
+        android:drawableLeft="@drawable/check_box_big_style"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/shop_back"
+        android:id="@+id/shop_group_cb"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:visibility="gone"
+        android:background="@null"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/shop_group_item"
+        android:layout_below="@id/shop_back"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/shop_tip_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46dp"
+            android:visibility="gone"
+            android:textColor="@color/main_text_color"
+            android:text="来自"/>
+
+        <ImageView
+            android:id="@+id/shop_group_image"
+            android:layout_width="25dp"
+            android:layout_toRightOf="@+id/shop_tip_txt"
+            android:src="@drawable/user_dafault"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:id="@+id/shop_group_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#212121"
+            android:layout_toRightOf="@+id/shop_group_image"
+            android:text="美国ABC网站供货"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_below="@id/shop_group_item"
+        android:layout_width="fill_parent"
+        android:background="#88333333"
+        android:layout_marginLeft="15dp"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

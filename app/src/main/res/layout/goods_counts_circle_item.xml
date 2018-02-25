@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:background="@drawable/goodscountscirclestyle"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/visible_counts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="200件"
+        android:textSize="12sp"
+        android:gravity="center_horizontal|bottom"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/filter_bg_gray"/>
+    <TextView
+        android:id="@+id/total_counts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="1000件"
+        android:textSize="12sp"
+        android:gravity="center_horizontal|top"/>
+</LinearLayout>

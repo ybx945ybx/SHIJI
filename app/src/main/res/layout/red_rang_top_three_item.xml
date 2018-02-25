@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="129dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/mine_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="16dp">
+            <cn.yiya.shiji.views.RoundedImageView
+                android:id="@+id/iv_head"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/oval"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/user_icon_default"
+                app:riv_border_color="@color/mine_white"
+                app:riv_border_width="2dp"
+                app:riv_oval="true" />
+            <ImageView
+                android:id="@+id/iv_rang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/red_one"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="17dp">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柿宝的说法的说法嗲声嗲气额外"
+                android:textSize="14sp"
+                android:textColor="#212121"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成长值:"
+                    android:textSize="11sp"
+                    android:textColor="#212121"/>
+                <TextView
+                    android:id="@+id/tv_group_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50000"
+                    android:textSize="12sp"
+                    android:textColor="#212121"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获得价值"
+            android:textSize="12sp"
+            android:textColor="#353535"/>
+        <TextView
+            android:id="@+id/tv_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000"
+            android:textSize="12sp"
+            android:textColor="#ed5137"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元的积分，可用于柿集内部购买商品抵扣"
+            android:textSize="12sp"
+            android:textColor="#353535"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/mine_background"/>
+
+</LinearLayout>

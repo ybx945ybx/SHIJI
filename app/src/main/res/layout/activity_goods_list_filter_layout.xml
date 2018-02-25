@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_banckground"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/mine_title_layout_white_bg"
+        android:id="@+id/title_layout"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/mine_background"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_banckground"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                    <RadioButton
+                        style="@style/goods_list_order_item_style"
+                        android:id="@+id/filter"
+                        android:layout_width="100dp"
+                        android:layout_height="42dp"
+                        android:paddingLeft="20dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="筛选"
+                        android:textSize="12sp"/>
+                <RadioButton
+                    style="@style/goods_list_order_item_style"
+                    android:id="@+id/brands"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:paddingLeft="20dp"
+                    android:button="@null"
+                    android:checked="false"
+                    android:text="品牌(可多选)"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+            <RelativeLayout
+                android:id="@+id/rlyt_rb_filter"
+                android:layout_width="100dp"
+                android:layout_height="42dp">
+                <ImageView
+                    android:id="@+id/iv_filter_indicator"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/goods_list_filter_indicater"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/rlyt_rb_filter">
+                <ImageView
+                    android:id="@+id/iv_brands_indicator"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/goods_list_filter_indicater"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mine_white"></FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/goods_list_filter_clear_commit_unclickable_bg"
+            android:text="清除全部"
+            android:textColor="@color/text_color"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:background="@drawable/goods_list_filter_clear_commit_bg"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textColor="@color/filter_background"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/new_gray_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_brand_stroke"
+            android:padding="1px">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/main_brands_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:src="@mipmap/ic_launcher"
+                fresco:actualImageScaleType="centerCrop" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/main_brands_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:text="品牌名"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <cn.yiya.shiji.views.FloatingActionButton
+            android:id="@+id/main_brands_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            app:v_styleId="@array/fab_wave" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_brands_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="22dp"
+        android:textColor="#9b9b9b"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_brands_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:background="@color/new_white_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eceded" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/main_brands_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不可描述"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/main_brands_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="几天前"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

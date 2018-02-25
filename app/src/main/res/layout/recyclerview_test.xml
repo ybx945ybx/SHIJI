@@ -1,0 +1,262 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorlayout"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <include layout="@layout/item_header_spacing"/>
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/brands_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#f0f0f0"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="最热门"
+                    android:textColor="#5f5f5f"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_work_hot_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="新上架"
+                    android:textColor="#5f5f5f"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_work_new_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="最低价"
+                    android:textColor="#5f5f5f"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_work_low_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#f0f0f0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="折扣多"
+                    android:textColor="#5f5f5f"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_work_discount_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+        <cn.yiya.shiji.widgets.recyclerview.SmoothAppBarLayout
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:layout_height="180dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <cn.yiya.shiji.widgets.recyclerview.KenBurnsSupportView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/brand_detail_backimage"
+                    android:transitionName="brand_detail_backImage"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:background="?attr/colorPrimary"
+                    android:paddingTop="25dp"
+                    android:elevation="10dp"
+                    app:navigationIcon="@mipmap/back_image_white"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"/>
+
+
+                <cn.yiya.shiji.widgets.recyclerview.SmoothCollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:minHeight="60dp"
+                    app:sctl_avatar_id="@+id/avatar"
+                    app:sctl_collapsed_avatarSize="32dp"
+                    app:sctl_collapsed_offsetY="0dp"
+                    app:sctl_collapsed_subtitleTextSize="14dp"
+                    app:sctl_collapsed_titleTextSize="16dp"
+                    app:sctl_expanded_avatarSize="54dp"
+                    app:sctl_expanded_subtitleTextSize="16dp"
+                    app:sctl_expanded_titleTextSize="24dp"
+                    app:sctl_subtitle_id="@+id/subtitle"
+                    app:sctl_title_id="@+id/title">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/user_dafault"/>
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avatar"
+                            android:layout_centerHorizontal="true"
+                            android:text="Title"/>
+
+                        <TextView
+                            android:id="@+id/subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Subtitle"
+                            android:textSize="16sp"/>
+                    </RelativeLayout>
+                </cn.yiya.shiji.widgets.recyclerview.SmoothCollapsingToolbarLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </cn.yiya.shiji.widgets.recyclerview.SmoothAppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

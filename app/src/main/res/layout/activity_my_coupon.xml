@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout_root">
+
+    <include layout="@layout/mine_title_layout_white_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+
+    <LinearLayout
+        android:id="@+id/ll_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/coupon_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mine_white"
+            app:tabTextColor="@color/filter_text_black"
+            app:tabIndicatorColor="@color/text_red"
+            app:tabSelectedTextColor="@color/text_red"
+            android:visibility="visible">
+        </android.support.design.widget.TabLayout>
+        <View
+            android:background="@color/menu_border_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"></View>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/coupon_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="244dp"
+    android:background="@color/new_black_color">
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="73dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="60dp">
+
+                <cn.yiya.shiji.views.RoundedNormalIV
+                    android:id="@+id/civ_head"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:background="@mipmap/oval"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/user_icon_default"
+                    app:riv_border_color="@color/mine_white"
+                    app:riv_border_width="2dp"
+                    app:riv_oval="true" />
+
+
+                <ImageView
+                    android:id="@+id/iv_follow_edit"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/white_edite_user" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="柿宝3456"
+                    android:textColor="@color/mine_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_red_people"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:src="@mipmap/v_gerenzhongxin"-->
+                    <!--android:visibility="visible" />-->
+                <TextView
+                    android:id="@+id/iv_red_people"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/red_level_bg"
+                    android:gravity="center"
+                    android:text="H1"
+                    android:textSize="10sp"
+                    android:textColor="@color/mine_white"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <View
+                    android:id="@+id/center_line"
+                    android:layout_width="2dp"
+                    android:layout_height="8dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/mine_white" />
+
+                <TextView
+                    android:id="@+id/tv_follows"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/center_line"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="关注  343"
+                    android:textColor="@color/mine_white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/left_line"
+                    android:layout_width="2dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_follows"
+                    android:background="@color/mine_white" />
+
+                <TextView
+                    android:id="@+id/tv_tags"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/left_line"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="标签  343"
+                    android:textColor="@color/mine_white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_fans"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/center_line"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="粉丝  343"
+                    android:textColor="@color/mine_white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/right_line"
+                    android:layout_width="2dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_fans"
+                    android:background="@color/mine_white" />
+
+                <TextView
+                    android:id="@+id/tv_likes"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/right_line"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="已赞  343"
+                    android:textColor="@color/mine_white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_red_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_red_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_red_desc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="暂无简介"
+                android:textColor="@color/mine_white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/mine_background">
+    <RelativeLayout
+        android:id="@+id/rlyt_first_group"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女士"
+            android:textSize="13sp"
+            android:textColor="@color/person_center_black"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/iv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qianwang"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mine_background"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycv_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_color"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:padding="2dp"
+        android:src="@mipmap/work_default"
+        android:background="@drawable/goods_detail_color_bg"
+        fresco:actualImageScaleType ="fitCenter"/>
+
+</LinearLayout>

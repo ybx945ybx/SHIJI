@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipe_refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <cn.yiya.shiji.h5.BridgeHighWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <!--<cn.yiya.shiji.h5.BridgeHighWebView-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="visible"/>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llyt_off_net"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tv_net_off"-->
+            <!--android:drawablePadding="7dp"-->
+            <!--android:drawableTop="@mipmap/zanwuwangluo"-->
+            <!--android:gravity="center"-->
+            <!--android:text="您的网络异常"-->
+            <!--android:textColor="@color/person_center_gray"-->
+            <!--android:textSize="13sp"-->
+            <!--android:textStyle="bold" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tv_webview_defeat"-->
+            <!--android:gravity="center"-->
+            <!--android:text="网页加载失败"-->
+            <!--android:textColor="@color/person_center_gray"-->
+            <!--android:textSize="13sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_reload"-->
+            <!--android:layout_width="134dp"-->
+            <!--android:layout_height="39dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:background="@drawable/reload_bg_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:text="重新加载"-->
+            <!--android:textColor="#0c0c0c"-->
+            <!--android:textSize="12sp" />-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>
+
+

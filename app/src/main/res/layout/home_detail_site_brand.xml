@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mine_white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/rlyt_flg">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_flag"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/work_default"
+            fresco:actualImageScaleType="centerInside"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_flag"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_site"
+                android:text="ASOS 英国官网供货"
+                android:textColor="@color/home_detail_black_txt"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_delivery_des"
+                    android:text="[转运]"
+                    android:textColor="@color/home_detail_grey_txt"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_discount_fee"
+                    android:text="（ 满400官网免邮 ） "
+                    android:textColor="@color/home_detail_grey_txt"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_go_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/jiantou"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/person_center_dividing"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlyt_brand"
+            android:layout_marginRight="65dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_brand"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/work_default"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_detail_work_item_border"
+                fresco:actualImageScaleType ="centerInside"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_brand"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_brand"
+                    android:text="Brixton"
+                    android:textColor="#000000"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="柿集精选品牌"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--<cn.yiya.shiji.views.FloatingActionButton-->
+            <!--android:id="@+id/fb_follow_brand"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:paddingLeft="40dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--app:v_styleId="@array/fab_wave" />-->
+        <ImageView
+            android:id="@+id/fb_follow_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/ic_tofollow" />
+    </RelativeLayout>
+    <!--<com.bigkoo.convenientbanner.ConvenientBanner-->
+        <!--android:id="@+id/cbanner_brand_activity"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="177dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginBottom="14dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:visibility="gone">-->
+
+    <!--</com.bigkoo.convenientbanner.ConvenientBanner>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="@color/mine_background"/>-->
+
+</LinearLayout>

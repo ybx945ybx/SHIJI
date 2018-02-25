@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_white_color"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view_line_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/new_gray_color"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_gray_stroke"
+            android:padding="1dp"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:placeholderImage="@mipmap/work_default" />
+
+        <TextView
+            android:id="@+id/tv_recommended"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="#99212121"
+            android:layout_alignBottom="@+id/iv_goods_image"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="已推荐"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/iv_goods_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="adf"
+                android:textColor="@color/home_detail_black_txt"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="ggggg"
+                android:textColor="@color/home_detail_black_txt"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#1e1e1e" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="￥14700"
+                android:textColor="@color/app_base_red"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_commission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="佣金：￥147"
+                    android:textColor="#212121"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_commission_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_commission"
+                    android:layout_marginTop="5dp"
+                    android:text="佣金比例：10%"
+                    android:textColor="#212121"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_order"
+                    android:layout_width="70dp"
+                    android:layout_height="26dp"
+                    android:layout_alignBottom="@+id/tv_commission_ratio"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_gray_stroke"
+                    android:gravity="center"
+                    android:text="下单"
+                    android:textColor="#0c0c0c"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:id="@+id/tv_buy"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_detail_forward_bg"
+            android:text="下单"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#0c0c0c"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/new_gray_color"/>
+</LinearLayout>

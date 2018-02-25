@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.yiya.shiji.views.MySwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.yiya.shiji.views.joinable.ParallaxRecyclerView
+            android:id="@+id/parallax_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </cn.yiya.shiji.views.MySwipeRefreshLayout>
+
+    <include layout="@layout/default_null_layout" />
+</RelativeLayout>

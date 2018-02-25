@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/new_white_color"
+    android:paddingLeft="16dp"
+    android:paddingRight="10dp">
+
+    <!--  toolbar左边图标按钮，如搜索或者返回按钮-->
+
+    <ImageView
+        android:id="@+id/toolbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:src="@mipmap/back_image" />
+
+    <!-- toolbar中间布局，分类搜索使用-->
+    <RelativeLayout
+        android:id="@+id/toolbar_middle_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="52dp"
+        android:layout_toRightOf="@+id/toolbar_left"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/toolbar_middle_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@color/default_banckground"
+            android:completionThreshold="1"
+            android:drawableLeft="@mipmap/search_tag_icon"
+            android:drawablePadding="7dp"
+            android:dropDownVerticalOffset="5dp"
+            android:hint="搜索商品和品牌"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:popupBackground="@color/mine_white"
+            android:scrollbars="none"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/toolbar_middle_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/sousuoguanbi"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!-- toolbar中间文本标题-->
+    <TextView
+        android:id="@+id/toolbar_middle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="商品列表"
+        android:textColor="@color/filter_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!-- toolbar右边的按钮，比如购物车，或者文字按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/toolbar_right_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/toolbar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/gouwuche_hei" />
+
+        <TextView
+            android:id="@+id/toolbar_right_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/car_count_other"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

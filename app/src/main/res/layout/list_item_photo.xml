@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/list_item_photo_date"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/grey_white"
+        android:singleLine="true"/>
+
+    <cn.yiya.shiji.widgets.AllGridView
+        android:id="@+id/list_item_photo_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="2dp"
+        android:numColumns="5"/>
+</LinearLayout>

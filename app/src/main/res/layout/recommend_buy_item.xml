@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gallery_item_tag_layout"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@color/item_bg">
+
+    <ImageView
+        android:id="@+id/recommend_buy_item_logo"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/recommend_buy_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/recommend_buy_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/mine_white"
+        android:background="#6f000000"/>
+
+</RelativeLayout>

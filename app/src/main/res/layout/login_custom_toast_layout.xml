@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/toast_layout_root"
+    android:background="@drawable/login_custom_toast_bg">
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/toast_context"
+        android:textSize="14sp"
+        android:text="兑换失败，优惠码无效"
+        android:textColor="#000000"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:id="@+id/rlyt_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mine_white"
+        android:paddingBottom="11dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="11dp">
+
+        <TextView
+            android:id="@+id/tv_branch_shop_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="其他分店 (4)"
+            android:textColor="@color/light_text"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/iv_more_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/travel_right_arrow"/>
+    </RelativeLayout>
+</LinearLayout>

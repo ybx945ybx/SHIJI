@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_dafault"/>
+    <RelativeLayout
+        android:id="@+id/rlyt_tag_details"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mine_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="标签活动详情"
+            android:textColor="@color/person_center_black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/iv_tag_detail_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/xia_fanhui"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_tag_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mine_white"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="23dp"
+        android:text="柿集新版即将上线，特此发出封面人物征集令，如果你够美够潮够有个性，那就发来你的美照，和万千潮人一较高下！
+
+如果你胜出了，知名摄影师免费为你拍大片，柿集几十万用户为你摇旗呐喊，还有各个渠道的联合推广让你红透半边天，网红算什么，大明星才是我们要打造的终极目标！"
+        android:textSize="13sp"
+        android:textColor="@color/text_color"
+        android:visibility="gone"/>
+
+</LinearLayout>

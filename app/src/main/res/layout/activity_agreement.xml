@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout style="@style/topBar" >
+
+        <Button style="@style/backButton"
+            android:id="@+id/back"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"/>
+        <TextView
+            style="@style/topTitle"
+            android:text="服务条款"
+            android:textColor="@color/mine_text_color"
+            />
+    </RelativeLayout>
+	<WebView android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/webview"/>
+</LinearLayout>

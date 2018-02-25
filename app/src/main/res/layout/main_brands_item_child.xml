@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="158dp"
+            android:background="@drawable/bg_brand_stroke"
+            android:padding="1px">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/brands_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                fresco:actualImageScaleType="centerInside" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_theme_icon"
+                android:layout_width="33dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:id="@+id/llyt_discount"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/main_brands_item_discount_bg"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_discount"
+                    android:textSize="13sp"
+                    android:textColor="@color/mine_white"
+                    android:textStyle="bold"
+                    android:text="3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:textColor="@color/mine_white"
+                    android:text="折"
+                    android:layout_marginLeft="1dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/brands_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxWidth="130dp"
+            android:text="啊实达的"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/brands_item_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/brands_item_price"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="130dp"
+                android:text="￥ 1445"
+                android:textColor="#bbbbbb"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brands_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxWidth="130dp"
+                android:text="￥ 1445"
+                android:textColor="@color/new_red_color"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/brands_item_space"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ll_brand"
+        android:background="#ffffff" />
+
+</RelativeLayout>

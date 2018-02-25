@@ -1,0 +1,6 @@
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/guid_line" />
+    <size android:height="2px" android:width="2px"/>
+</shape>

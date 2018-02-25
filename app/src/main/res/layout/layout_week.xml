@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:gravity="bottom"
+        android:paddingBottom="5dp">
+        <!-- android:layout_alignParentRight="true" -->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/background_red"
+            android:id="@+id/tv_week"
+            android:text="28"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_red"
+            android:id="@+id/weeklabel"
+            android:textSize="16sp" 
+            android:text="周"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"  
+            android:layout_marginLeft="15dp"    
+            android:id="@+id/tv_days"
+            android:text="4月19日-25日"/>
+    </LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="@dimen/button_height"
+	    android:weightSum="7">
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:textColor="@color/white"
+	            android:text="S"
+	            android:id="@+id/tv_sun"
+	            android:clickable="true"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="M"
+	            android:clickable="true"
+	            android:id="@+id/tv_mon"
+	            android:textColor="@color/white"
+	            android:background="@drawable/shape_circle_darkred"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="T"
+	            android:clickable="true"
+	            android:id="@+id/tv_tue"
+	            android:textColor="@color/white"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="W"
+	            android:id="@+id/tv_wed"
+	            android:textColor="@color/white"
+	            android:clickable="true"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="T"
+	            android:id="@+id/tv_thu"
+	            android:textColor="@color/white"
+	            android:clickable="true"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="F"
+	            android:id="@+id/tv_fri"
+	            android:textColor="@color/white"
+	            android:clickable="true"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	        <TextView android:layout_width="@dimen/dateCircleHeight"
+	            android:layout_height="@dimen/dateCircleHeight"
+	            android:gravity="center"
+	            android:textSize="@dimen/weekdayTextSize"
+	            android:text="S"
+	            android:id="@+id/tv_sat"
+	            android:textColor="@color/white"
+	            android:clickable="true"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

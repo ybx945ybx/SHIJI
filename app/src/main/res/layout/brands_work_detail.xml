@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/person_center_dividing"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_work_list"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line"/>
+
+    <TextView
+        android:id="@+id/tv_default_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/zanwugouwubiji"
+        android:drawablePadding="8dp"
+        android:text="暂无购物笔记"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/person_center_gray"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:paddingBottom="71dp"
+        android:visibility="gone">
+    </TextView>
+
+</RelativeLayout>

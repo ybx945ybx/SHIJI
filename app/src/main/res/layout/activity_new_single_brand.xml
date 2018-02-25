@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_single_brand" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_top"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffffff"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed" />
+
+            <View
+                android:id="@+id/viewline_top"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/tablayout_top"
+                android:background="@color/new_gray_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_order_filter_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewline_top"
+                android:background="#f0f0f0"
+                android:paddingBottom="6dp"
+                android:paddingTop="7dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_order_top"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goods_list_order_filter_item_selector"
+                    android:gravity="center"
+                    android:text="排序"
+                    android:textColor="@color/filter_background"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_filter_top"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goods_list_order_filter_item_selector"
+                    android:gravity="center"
+                    android:text="筛选"
+                    android:textColor="@color/filter_background"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

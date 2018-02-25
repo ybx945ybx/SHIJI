@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="#F0F0F0">
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/black"
+        android:layout_weight="1.0"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"
+        android:visibility="visible"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        >
+
+        <cn.yiya.shiji.views.SquareImageView
+            android:scaleType="fitXY"
+            android:id="@+id/brands_image"
+            android:layout_width="50dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/del_icon_normal"
+            />
+
+        <TextView
+            android:id="@+id/brands_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/brands_image"
+            android:maxLines="2" />
+        <TextView
+            android:id="@+id/cn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@id/brands_name"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/brands_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/brands_name"
+            android:layout_toRightOf="@id/brands_image"
+            android:text=""
+            android:textColor="#BCBCBC"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scrollbars="none"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

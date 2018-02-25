@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/new_gray_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color">
+
+        <LinearLayout
+            android:id="@+id/ll_check_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp">
+
+            <CheckBox
+                android:id="@+id/cb_site"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@null"
+                android:button="@drawable/check_box_cart_style"
+                android:checked="true"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_site_flag"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ll_check_site"
+            fresco:actualImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/user_dafault" />
+
+        <TextView
+            android:id="@+id/tv_site_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_site_flag"
+            android:text="ASOS官网"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_site_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_site_arrow"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/gerenzhongxinjiantou" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <cn.yiya.shiji.views.SwipeRecyclerView
+        android:id="@+id/rv_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_full_reduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_white_color"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_full_reduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="满减优惠："
+            android:textColor="#212121"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reduction_fit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="- ¥ 0"
+            android:textColor="#212121"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

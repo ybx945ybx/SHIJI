@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="58dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/mine_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增成长值每月最后一天将会进行统计排名公布，前三名会予以"
+        android:textSize="12sp"
+        android:textColor="#8e8e8e"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="丰厚的奖励"
+            android:textSize="12sp"
+            android:textColor="#8e8e8e"/>
+        <TextView
+            android:id="@+id/tv_red_rang_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（2017-01-31 更新）"
+            android:textSize="12sp"
+            android:textColor="#ef5b26"/>
+    </LinearLayout>
+
+</LinearLayout>

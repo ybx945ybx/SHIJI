@@ -1,0 +1,57 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/new_black_color</item>
+    </style>
+	<style name="BrandsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+		<item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryDark">#00000000</item>
+        <item name="colorAccent">#00000000</item>
+        <item name="colorPrimary">#00000000</item>
+    </style>
+
+    <style name="Community" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/new_black_color</item>
+        <item name="colorAccent">@color/new_black_color</item>
+        <item name="colorPrimary">@color/new_black_color</item>
+    </style>
+
+    <style name="White" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#b2b2b2</item>
+        <item name="colorAccent">#b2b2b2</item>
+        <item name="colorPrimary">#b2b2b2</item>
+    </style>
+
+    <style name="Category" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/new_black_color</item>
+        <item name="colorAccent">@color/new_black_color</item>
+        <item name="colorPrimary">@color/new_black_color</item>
+    </style>
+
+    <style name="WebViewTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">#20000000</item>
+    </style>
+
+    <style name="Collocation" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/mine_white</item>
+        <item name="colorAccent">@color/mine_white</item>
+        <item name="colorPrimary">@color/mine_white</item>
+    </style>
+</resources>

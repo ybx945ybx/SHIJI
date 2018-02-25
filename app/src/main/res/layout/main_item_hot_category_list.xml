@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <RelativeLayout
+        android:layout_width="102dp"
+        android:layout_height="99dp"
+        android:background="@drawable/bg_brand_stroke"
+        android:padding="4dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_category_image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            fresco:actualImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="男士上衣"
+            android:textColor="#4a4a4a"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

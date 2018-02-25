@@ -1,2 +1,1 @@
-# SHIJI
-shiji
+# super_mammy_android

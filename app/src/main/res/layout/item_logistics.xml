@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/logistics_space"
+        android:layout_width="16dp"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/logistics_logo"
+        android:background="@mipmap/user_icon_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:visibility="visible"
+        android:layout_toRightOf="@id/logistics_space"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/logistics_tips"
+        android:text="您的包裹已被签收，祝您购物愉快"
+        android:maxLines="3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/logistics_logo"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/logistics_time"
+        android:text="2015-03-16 02:20:20"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/logistics_tips"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/logistics_logo"
+        android:layout_height="wrap_content"/>
+    
+    <View
+        android:id="@+id/logistics_line"
+        android:layout_width="match_parent"
+        android:background="#c6c6c6"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/logistics_time"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/logistics_latest_line"
+        android:layout_width="20dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_alignTop="@id/logistics_tips"
+        android:layout_alignBottom="@id/logistics_line"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="2px"
+            android:background="#c6c6c6"
+            android:layout_marginTop="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_logistics_latest"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logistics_normal_line"
+        android:layout_width="20dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignTop="@id/logistics_space"
+        android:layout_alignBottom="@id/logistics_line"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/logistics_ver_line"
+            android:layout_width="2px"
+            android:background="#c6c6c6"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/logistics_point_img"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_logistics_light"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
